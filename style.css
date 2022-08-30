@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: whitesmoke;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid floralwhite;
+    text-align: center;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+.hover {
+    transform: scale(3);
+    background-color: lightseagreen;
+    transition: 0.5s ease-in-out;
+}
+
+.clicked {
+    transform: scale(2);
+    background-color: chartreuse;
+    transition: 0.5s ease-in;
+}
